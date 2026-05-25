@@ -1,0 +1,1053 @@
+const translations = {
+  en: {
+    brandTag: "Repair complaint suite",
+    customer: "Customer",
+    dealer: "Dealer",
+    darkMode: "Dark mode",
+    lightMode: "Light mode",
+    workspace: "Customer and dealer complaint workspace",
+    customerPortal: "Customer Portal",
+    dealerPortal: "Dealer Dashboard",
+    sendAlert: "Send alert",
+    newComplaint: "New complaint",
+    submitComplaint: "Submit Complaint",
+    name: "Name",
+    phone: "Phone Number",
+    company: "Company Name",
+    product: "Product Name",
+    complaintType: "Product Issue",
+    billImage: "Upload Bill Image",
+    productImage: "Upload Product Image",
+    description: "Complaint Description",
+    submit: "Submit",
+    liveTracking: "Live Time Tracking",
+    complaintTracking: "Complaint Tracking",
+    profile: "Customer Profile",
+    serviceHistory: "Service History",
+    management: "Complaint Management",
+    activeComplaints: "All Complaints",
+    searchComplaints: "Search Complaints",
+    filterComplaints: "Filter Complaints",
+    companyFilter: "Company",
+    productFilter: "Product",
+    customerHistory: "Customer History",
+    searchCustomerHistory: "Search Customer",
+    smartTriage: "Smart Triage",
+    estimatedTime: "Estimated Time",
+    dealerNote: "Dealer Note",
+    customerBill: "Customer Bill",
+    uploadedBill: "Uploaded Bill",
+    shareComplaint: "Share Complaint",
+    complaintLink: "Complaint Link",
+    complaintNo: "Complaint No.",
+    phoneLabel: "Phone",
+    submittedLabel: "Submitted",
+    priorityLabel: "Priority",
+    etaLabel: "ETA",
+    billLabel: "Bill",
+    smartNoteLabel: "Smart Note",
+    viewBill: "View Bill",
+    share: "Share",
+    accept: "Accept",
+    noBill: "No bill",
+    notUploaded: "Not uploaded",
+    complaintsWord: "complaints",
+    complaintWord: "complaint",
+    totalComplaints: "Total Complaints",
+    pendingComplaints: "Pending Complaints",
+    solvedComplaints: "Solved Complaints",
+    delayedComplaints: "Delayed Complaints",
+    allStatus: "All Status",
+    allCompanies: "All Companies",
+    allProducts: "All Products",
+    repairPerformance: "Repair Performance",
+    alertSystem: "36 Hour Alert System",
+    delayReminder: "AI & Alerts",
+  },
+  gu: {
+    brandTag: "રિપેર ફરિયાદ સુટ",
+    customer: "ગ્રાહક",
+    dealer: "ડીલર",
+    darkMode: "ડાર્ક મોડ",
+    lightMode: "લાઇટ મોડ",
+    workspace: "ગ્રાહક અને ડીલર ફરિયાદ વર્કસ્પેસ",
+    customerPortal: "ગ્રાહક પોર્ટલ",
+    dealerPortal: "ડીલર ડેશબોર્ડ",
+    sendAlert: "એલર્ટ મોકલો",
+    newComplaint: "નવી ફરિયાદ",
+    submitComplaint: "ફરિયાદ સબમિટ કરો",
+    name: "નામ",
+    phone: "ફોન નંબર",
+    company: "કંપની નામ",
+    product: "પ્રોડક્ટ નામ",
+    complaintType: "પ્રોડક્ટ સમસ્યા",
+    billImage: "બિલ ઈમેજ અપલોડ કરો",
+    productImage: "પ્રોડક્ટ ઈમેજ અપલોડ કરો",
+    description: "ફરિયાદ વર્ણન",
+    submit: "સબમિટ",
+    liveTracking: "લાઇવ સમય ટ્રેકિંગ",
+    complaintTracking: "ફરિયાદ ટ્રેકિંગ",
+    profile: "ગ્રાહક પ્રોફાઇલ",
+    serviceHistory: "સર્વિસ હિસ્ટ્રી",
+    management: "ફરિયાદ મેનેજમેન્ટ",
+    activeComplaints: "બધી ફરિયાદો",
+    searchComplaints: "ફરિયાદ શોધો",
+    filterComplaints: "ફરિયાદ ફિલ્ટર કરો",
+    companyFilter: "કંપની",
+    productFilter: "પ્રોડક્ટ",
+    customerHistory: "ગ્રાહક હિસ્ટ્રી",
+    searchCustomerHistory: "ગ્રાહક શોધો",
+    smartTriage: "સ્માર્ટ ટ્રાયેજ",
+    estimatedTime: "અંદાજિત સમય",
+    dealerNote: "ડીલર નોંધ",
+    customerBill: "ગ્રાહક બિલ",
+    uploadedBill: "અપલોડ કરેલું બિલ",
+    shareComplaint: "ફરિયાદ શેર કરો",
+    complaintLink: "ફરિયાદ વિગતો",
+    complaintNo: "ફરિયાદ નં.",
+    phoneLabel: "ફોન",
+    submittedLabel: "સબમિટ સમય",
+    priorityLabel: "પ્રાથમિકતા",
+    etaLabel: "અંદાજિત સમય",
+    billLabel: "બિલ",
+    smartNoteLabel: "સ્માર્ટ નોંધ",
+    viewBill: "બિલ જુઓ",
+    share: "શેર",
+    accept: "સ્વીકારો",
+    noBill: "બિલ નથી",
+    notUploaded: "અપલોડ નથી",
+    complaintsWord: "ફરિયાદો",
+    complaintWord: "ફરિયાદ",
+    totalComplaints: "કુલ ફરિયાદો",
+    pendingComplaints: "પેન્ડિંગ ફરિયાદો",
+    solvedComplaints: "પૂર્ણ ફરિયાદો",
+    delayedComplaints: "વિલંબિત ફરિયાદો",
+    allStatus: "બધા સ્ટેટસ",
+    allCompanies: "બધી કંપનીઓ",
+    allProducts: "બધા પ્રોડક્ટ",
+    repairPerformance: "રિપેર કામગીરી",
+    alertSystem: "36 કલાક એલર્ટ સિસ્ટમ",
+    delayReminder: "AI અને એલર્ટ",
+  },
+};
+
+const viewTitles = {
+  customer: "customerPortal",
+  dealer: "dealerPortal",
+};
+
+const companyProducts = {
+  Voltix: ["Inverter Battery", "Solar UPS", "Home Inverter"],
+  BrightView: ["LED TV", "Smart TV X2", "Display Panel"],
+  Soundio: ["Bluetooth Speaker", "Soundbar Pro", "Wireless Earbuds"],
+  CoolAir: ["Split AC", "Window AC", "Air Cooler"],
+};
+
+const productIssueForms = {
+  "Inverter Battery": ["Battery Backup Issue", "Charging Problem", "Product Not Working", "Demo", "Other"],
+  "Solar UPS": ["Power Output Issue", "Charging Problem", "Product Not Working", "Demo", "Other"],
+  "Home Inverter": ["Product Not Working", "Battery Issue", "Noise Problem", "Demo", "Other"],
+  "LED TV": ["Display Problem", "Sound Problem", "Product Not Working", "Demo", "Other"],
+  "Smart TV X2": ["Display Problem", "App Not Working", "Sound Problem", "Demo", "Other"],
+  "Display Panel": ["Display Problem", "Line On Screen", "Product Not Working", "Demo", "Other"],
+  "Bluetooth Speaker": ["Sound Problem", "Battery Issue", "Connectivity Issue", "Demo", "Other"],
+  "Soundbar Pro": ["Sound Problem", "Remote Issue", "Connectivity Issue", "Demo", "Other"],
+  "Wireless Earbuds": ["Sound Problem", "Battery Issue", "Pairing Issue", "Demo", "Other"],
+  "Split AC": ["Cooling Problem", "Gas Leakage", "Water Leakage", "Remote Issue", "Demo", "Other"],
+  "Window AC": ["Cooling Problem", "Noise Problem", "Water Leakage", "Product Not Working", "Demo", "Other"],
+  "Air Cooler": ["Cooling Problem", "Water Pump Issue", "Fan Problem", "Demo", "Other"],
+};
+
+const statusFlow = ["Pending", "Accepted", "Working", "Solved", "Rejected"];
+const delayLimitMs = 36 * 60 * 60 * 1000;
+
+let language = "en";
+let currentView = "customer";
+let selectedComplaintType = "Product Not Working";
+let nextComplaintNumber = 1045;
+let searchTerm = "";
+let statusFilter = "All";
+let companyFilter = "All";
+let productFilter = "All";
+let historySearchTerm = "";
+let dealerTab = "total";
+
+const now = Date.now();
+let complaints = [
+  {
+    id: "CMP-1042",
+    name: "Nirav Shah",
+    phone: "+91 98765 43210",
+    product: "Inverter Battery",
+    company: "Voltix",
+    type: "Battery Issue",
+    status: "Working",
+    submittedAt: now - 28 * 60 * 60 * 1000,
+    estimatedHours: 34,
+    priority: "High",
+    smartNote: "Check battery health and charging circuit first.",
+    billUrl: sampleBill("CMP-1042", "Nirav Shah", "Voltix Inverter Battery"),
+    billName: "bill-cmp-1042.svg",
+  },
+  {
+    id: "CMP-1043",
+    name: "Jigna Patel",
+    phone: "+91 99000 22334",
+    product: "LED TV",
+    company: "BrightView",
+    type: "Display Problem",
+    status: "Pending",
+    submittedAt: now - 39 * 60 * 60 * 1000,
+    estimatedHours: 30,
+    priority: "High",
+    smartNote: "Display panel issue needs fast inspection.",
+    billUrl: sampleBill("CMP-1043", "Jigna Patel", "BrightView LED TV"),
+    billName: "bill-cmp-1043.svg",
+  },
+  {
+    id: "CMP-1044",
+    name: "Harsh Mehta",
+    phone: "+91 91234 56780",
+    product: "Bluetooth Speaker",
+    company: "Soundio",
+    type: "Sound Problem",
+    status: "Accepted",
+    submittedAt: now - 12 * 60 * 60 * 1000,
+    estimatedHours: 24,
+    priority: "Medium",
+    smartNote: "Test speaker driver, Bluetooth board, and charging.",
+    billUrl: sampleBill("CMP-1044", "Harsh Mehta", "Soundio Bluetooth Speaker"),
+    billName: "bill-cmp-1044.svg",
+  },
+];
+
+function sampleBill(id, name, product) {
+  const svg = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="900" height="1180" viewBox="0 0 900 1180">
+      <rect width="900" height="1180" fill="#ffffff"/>
+      <rect x="56" y="56" width="788" height="1068" rx="34" fill="#f4f8ff" stroke="#1d72f3" stroke-width="4"/>
+      <text x="100" y="150" font-family="Arial" font-size="54" font-weight="700" fill="#121827">Service Bill</text>
+      <text x="100" y="230" font-family="Arial" font-size="30" fill="#667389">Complaint: ${id}</text>
+      <text x="100" y="300" font-family="Arial" font-size="30" fill="#667389">Customer: ${name}</text>
+      <text x="100" y="370" font-family="Arial" font-size="30" fill="#667389">Product: ${product}</text>
+      <line x1="100" y1="440" x2="800" y2="440" stroke="#d7e2f3" stroke-width="4"/>
+      <text x="100" y="530" font-family="Arial" font-size="32" font-weight="700" fill="#121827">Warranty verification copy</text>
+      <text x="100" y="600" font-family="Arial" font-size="28" fill="#667389">Dealer can preview this uploaded bill image.</text>
+      <rect x="100" y="720" width="700" height="180" rx="20" fill="#e7fff8" stroke="#0bbf9a" stroke-width="3"/>
+      <text x="140" y="820" font-family="Arial" font-size="34" font-weight="700" fill="#0f8f75">Valid Customer Bill</text>
+    </svg>
+  `;
+  return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+}
+
+function t(key) {
+  return translations[language][key] || translations.en[key] || key;
+}
+
+function statusText(status) {
+  if (language !== "gu") return status;
+  const statuses = {
+    Pending: "પેન્ડિંગ",
+    Accepted: "સ્વીકારેલ",
+    Working: "કામ ચાલુ",
+    Solved: "પૂર્ણ",
+    Rejected: "નકારેલ",
+    Delayed: "વિલંબિત",
+    High: "ઉચ્ચ",
+    Medium: "મધ્યમ",
+    Low: "ઓછી",
+    Critical: "તાત્કાલિક",
+    Review: "રીવ્યુ",
+  };
+  return statuses[status] || status;
+}
+
+function elapsedMs(complaint) {
+  return Math.max(0, Date.now() - complaint.submittedAt);
+}
+
+function formatDuration(ms) {
+  const totalSeconds = Math.floor(ms / 1000);
+  const hours = String(Math.floor(totalSeconds / 3600)).padStart(2, "0");
+  const minutes = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, "0");
+  const seconds = String(totalSeconds % 60).padStart(2, "0");
+  return `${hours}:${minutes}:${seconds}`;
+}
+
+function formatDateTime(timestamp) {
+  return new Date(timestamp).toLocaleString("en-IN", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+}
+
+function elapsedHours(complaint) {
+  return Math.floor(elapsedMs(complaint) / (60 * 60 * 1000));
+}
+
+function isDelayed(complaint) {
+  return complaint.status !== "Solved" && complaint.status !== "Rejected" && elapsedMs(complaint) >= delayLimitMs;
+}
+
+function getSmartTriage(product, issue) {
+  const text = `${product} ${issue}`.toLowerCase();
+  let priority = "Medium";
+  let estimatedHours = 24;
+  let smartNote = "Standard inspection and repair queue.";
+
+  if (text.includes("demo")) {
+    priority = "Low";
+    estimatedHours = 4;
+    smartNote = "Demo request. Schedule a quick customer walkthrough.";
+  } else if (text.includes("gas leakage") || text.includes("product not working") || text.includes("power output")) {
+    priority = "Critical";
+    estimatedHours = 12;
+    smartNote = "Urgent issue. Assign first available technician and notify dealer.";
+  } else if (text.includes("cooling") || text.includes("display") || text.includes("battery backup") || text.includes("charging")) {
+    priority = "High";
+    estimatedHours = 18;
+    smartNote = "Likely parts or diagnostic issue. Keep spare check ready.";
+  } else if (text.includes("sound") || text.includes("connectivity") || text.includes("remote") || text.includes("pump")) {
+    priority = "Medium";
+    estimatedHours = 24;
+    smartNote = "Run functional test before opening hardware.";
+  } else if (text.includes("other")) {
+    priority = "Review";
+    estimatedHours = 36;
+    smartNote = "Needs dealer review because the issue is custom.";
+  }
+
+  return { priority, estimatedHours, smartNote };
+}
+
+function getVisibleComplaints() {
+  const normalizedSearch = searchTerm.trim().toLowerCase();
+  return complaints.filter((item) => {
+    const haystack =
+      `${item.id} ${item.name} ${item.phone} ${item.company} ${item.product} ${item.type} ${item.status} ${item.priority} ${item.smartNote}`.toLowerCase();
+    const matchesSearch = !normalizedSearch || haystack.includes(normalizedSearch);
+    const matchesStatus =
+      statusFilter === "All" ||
+      item.status === statusFilter ||
+      (statusFilter === "Delayed" && isDelayed(item));
+    const matchesCompany = companyFilter === "All" || item.company === companyFilter;
+    const matchesProduct = productFilter === "All" || item.product === productFilter;
+    const matchesDealerTab =
+      dealerTab !== "active" || (item.status !== "Solved" && item.status !== "Rejected");
+    return matchesSearch && matchesStatus && matchesCompany && matchesProduct && matchesDealerTab;
+  });
+}
+
+function uniqueValues(items, key) {
+  return [...new Set(items.map((item) => item[key]))].sort();
+}
+
+function setOptions(select, values, allLabel) {
+  select.innerHTML = [
+    `<option value="All">${allLabel}</option>`,
+    ...values.map((value) => `<option value="${value}">${value}</option>`),
+  ].join("");
+}
+
+function renderStatusFilterOptions() {
+  const select = document.getElementById("statusFilter");
+  const statuses = ["Pending", "Accepted", "Working", "Solved", "Rejected", "Delayed"];
+  select.innerHTML = [
+    `<option value="All">${t("allStatus")}</option>`,
+    ...statuses.map((status) => `<option value="${status}">${statusText(status)}</option>`),
+  ].join("");
+  select.value = statusFilter;
+}
+
+function renderCompanyProductSelectors() {
+  const companySelect = document.getElementById("companySelect");
+  const productSelect = document.getElementById("productSelect");
+  const companies = Object.keys(companyProducts);
+  const currentCompany = companySelect.value || companies[0];
+  const currentProduct = productSelect.value;
+
+  companySelect.innerHTML = companies.map((company) => `<option value="${company}">${company}</option>`).join("");
+  companySelect.value = companies.includes(currentCompany) ? currentCompany : companies[0];
+
+  const products = companyProducts[companySelect.value];
+  productSelect.innerHTML = products
+    .map((product) => `<option value="${product}">${product}</option>`)
+    .join("");
+  productSelect.value = products.includes(currentProduct) ? currentProduct : products[0];
+
+  const availableIssues = productIssueForms[productSelect.value] || ["Product Not Working", "Demo", "Other"];
+  if (!availableIssues.includes(selectedComplaintType)) {
+    selectedComplaintType = availableIssues[0];
+  }
+}
+
+function renderDealerFilters() {
+  const companySelect = document.getElementById("companyFilter");
+  const productSelect = document.getElementById("productFilter");
+  const companies = uniqueValues(complaints, "company");
+  const products = uniqueValues(
+    companyFilter === "All" ? complaints : complaints.filter((item) => item.company === companyFilter),
+    "product",
+  );
+
+  setOptions(companySelect, companies, t("allCompanies"));
+  companySelect.value = companies.includes(companyFilter) ? companyFilter : "All";
+  setOptions(productSelect, products, t("allProducts"));
+  productSelect.value = products.includes(productFilter) ? productFilter : "All";
+}
+
+function renderDealerTabs() {
+  document.querySelectorAll(".dealer-tab").forEach((button) => {
+    button.classList.toggle("active", button.dataset.dealerTab === dealerTab);
+  });
+  document.querySelectorAll(".dealer-tab-panel").forEach((panel) => {
+    const allowedTabs = panel.dataset.tabPanel.split(" ");
+    panel.hidden = !allowedTabs.includes(dealerTab);
+  });
+}
+
+function applyTranslations() {
+  document.querySelectorAll("[data-i18n]").forEach((node) => {
+    node.textContent = t(node.dataset.i18n);
+  });
+  document.getElementById("viewTitle").textContent = t(viewTitles[currentView]);
+  document.getElementById("languageToggle").textContent =
+    language === "en" ? "GU" : "EN";
+  document.getElementById("themeToggle").textContent = document.body.classList.contains("dark")
+    ? t("lightMode")
+    : t("darkMode");
+}
+
+function renderComplaintTypes() {
+  const container = document.getElementById("complaintTypes");
+  const selectedProduct = document.getElementById("productSelect")?.value;
+  const availableIssues = productIssueForms[selectedProduct] || ["Product Not Working", "Demo", "Other"];
+
+  if (!availableIssues.includes(selectedComplaintType)) {
+    selectedComplaintType = availableIssues[0];
+  }
+
+  container.innerHTML = "";
+  availableIssues.forEach((type) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = `chip ${type === selectedComplaintType ? "selected" : ""}`;
+    button.textContent = type;
+    button.addEventListener("click", () => {
+      selectedComplaintType = type;
+      renderComplaintTypes();
+      renderSmartTriage();
+    });
+    container.appendChild(button);
+  });
+}
+
+function renderSmartTriage() {
+  const product = document.getElementById("productSelect")?.value;
+  if (!product) return;
+
+  const triage = getSmartTriage(product, selectedComplaintType);
+  document.getElementById("triagePriority").textContent = `${statusText(triage.priority)} ${t("priorityLabel")}`;
+  document.getElementById("triageEta").textContent = `${triage.estimatedHours}h`;
+  document.getElementById("triageNote").textContent = triage.smartNote;
+}
+
+function statusTimeline(complaint) {
+  return statusFlow
+    .map((status) => {
+      const statusIndex = statusFlow.indexOf(complaint.status);
+      const index = statusFlow.indexOf(status);
+      const state = index < statusIndex ? "done" : status === complaint.status ? "current" : "";
+      return `
+        <div class="timeline-step ${state}">
+          <span class="timeline-dot"></span>
+          <strong>${status}</strong>
+          <span>${status === complaint.status ? "Now" : ""}</span>
+        </div>
+      `;
+    })
+    .join("");
+}
+
+function renderCustomerTracking() {
+  const container = document.getElementById("customerTracking");
+  container.innerHTML = complaints
+    .map(
+      (complaint) => `
+        <article class="tracking-card ${isDelayed(complaint) ? "delayed" : ""}" data-complaint-id="${complaint.id}">
+          <header>
+            <div>
+              <strong>${t("complaintNo")} ${complaint.id} - ${complaint.product}</strong>
+              <p>${complaint.type} | ${complaint.company}</p>
+            </div>
+            <span class="timer-pill" data-timer-id="${complaint.id}">${formatDuration(elapsedMs(complaint))}</span>
+          </header>
+          <div class="timeline">${statusTimeline(complaint)}</div>
+          <p class="tracking-note" data-note-id="${complaint.id}">
+            ${isDelayed(complaint) ? "Delayed alert active: dealer and customer notifications required." : `Estimated time: ${complaint.estimatedHours} hours`}
+          </p>
+        </article>
+      `,
+    )
+    .join("");
+}
+
+function renderServiceHistory() {
+  const container = document.getElementById("serviceHistory");
+  container.innerHTML = complaints
+    .map(
+      (item) => `
+        <article class="history-item">
+          <strong>${t("complaintNo")} ${item.id} - ${item.product}</strong>
+          <p>${item.type} at ${item.company}</p>
+          <span class="badge">${statusText(item.status)}</span>
+          <button class="mini-bill-button" data-view-bill="${item.id}" ${item.billUrl ? "" : "disabled"}>${t("viewBill")}</button>
+        </article>
+      `,
+    )
+    .join("");
+}
+
+function renderDealerCustomerHistory() {
+  const container = document.getElementById("dealerCustomerHistory");
+  const normalizedSearch = historySearchTerm.trim().toLowerCase();
+  const customers = complaints.reduce((acc, item) => {
+    if (!acc[item.phone]) {
+      acc[item.phone] = {
+        name: item.name,
+        phone: item.phone,
+        total: 0,
+        latest: item,
+      };
+    }
+    acc[item.phone].total += 1;
+    if (item.submittedAt > acc[item.phone].latest.submittedAt) {
+      acc[item.phone].latest = item;
+    }
+    return acc;
+  }, {});
+
+  const visibleCustomers = Object.values(customers).filter((customer) => {
+    const haystack = `${customer.name} ${customer.phone}`.toLowerCase();
+    return !normalizedSearch || haystack.includes(normalizedSearch);
+  });
+
+  if (!visibleCustomers.length) {
+    container.innerHTML = `
+      <article class="empty-state">
+        <strong>No customer history found</strong>
+        <p>Search by customer name or phone number.</p>
+      </article>
+    `;
+    return;
+  }
+
+  container.innerHTML = visibleCustomers
+    .map(
+      (customer) => {
+        const customerComplaints = complaints
+          .filter((item) => item.phone === customer.phone)
+          .sort((a, b) => b.submittedAt - a.submittedAt)
+          .map(
+            (item) => `
+              <li>
+                <span>${item.id}</span>
+                <strong>${item.product}</strong>
+                <em>${statusText(item.status)}</em>
+                <button class="mini-bill-button" data-view-bill="${item.id}" ${item.billUrl ? "" : "disabled"}>${item.billUrl ? t("viewBill") : t("noBill")}</button>
+              </li>
+            `,
+          )
+          .join("");
+
+        return `
+        <article class="history-item">
+          <strong>${customer.name}</strong>
+          <p>${customer.phone} | ${customer.total} ${customer.total > 1 ? t("complaintsWord") : t("complaintWord")}</p>
+          <span class="badge">${customer.latest.product}</span>
+          <ul class="customer-history-list">${customerComplaints}</ul>
+        </article>
+      `;
+      },
+    )
+    .join("");
+}
+
+function getMetrics() {
+  return [
+    [t("totalComplaints"), complaints.length],
+    [t("pendingComplaints"), complaints.filter((item) => item.status === "Pending").length],
+    [t("solvedComplaints"), complaints.filter((item) => item.status === "Solved").length],
+    [t("delayedComplaints"), complaints.filter(isDelayed).length],
+  ];
+}
+
+function renderMetrics() {
+  document.getElementById("dealerMetrics").innerHTML = getMetrics()
+    .map(
+      ([label, value]) => `
+        <article class="metric-card">
+          <span>${label}</span>
+          <strong>${value}</strong>
+        </article>
+      `,
+    )
+    .join("");
+}
+
+function renderComplaints() {
+  const container = document.getElementById("complaintList");
+  const visibleComplaints = getVisibleComplaints();
+
+  if (!visibleComplaints.length) {
+    container.innerHTML = `
+      <article class="empty-state">
+        <strong>No complaints found</strong>
+        <p>Try another search keyword or status filter.</p>
+      </article>
+    `;
+    return;
+  }
+
+  container.innerHTML = visibleComplaints
+    .map(
+      (item) => `
+      <article class="complaint-card ${isDelayed(item) ? "delayed" : ""}" data-complaint-id="${item.id}">
+        <header>
+          <div>
+            <strong>${t("complaintNo")} ${item.id} - ${item.name}</strong>
+            <p>${item.company} ${item.product} | ${item.type} | <span data-list-timer-id="${item.id}">${formatDuration(elapsedMs(item))}</span> open</p>
+          </div>
+          <span class="badge" data-badge-id="${item.id}">${isDelayed(item) ? statusText("Delayed") : statusText(item.status)}</span>
+        </header>
+        <dl class="complaint-details">
+          <div><dt>${t("phoneLabel")}</dt><dd>${item.phone}</dd></div>
+          <div><dt>${t("submittedLabel")}</dt><dd>${elapsedHours(item)}h ago</dd></div>
+          <div><dt>Date & Time</dt><dd>${formatDateTime(item.submittedAt)}</dd></div>
+          <div><dt>${t("priorityLabel")}</dt><dd>${statusText(item.priority)}</dd></div>
+          <div><dt>${t("etaLabel")}</dt><dd>${item.estimatedHours}h</dd></div>
+          <div><dt>${t("billLabel")}</dt><dd>${item.billName || t("notUploaded")}</dd></div>
+          <div><dt>Product Image</dt><dd>${item.productImageName || t("notUploaded")}</dd></div>
+          <div><dt>${t("smartNoteLabel")}</dt><dd>${item.smartNote}</dd></div>
+        </dl>
+        <div class="complaint-actions">
+          <button class="status-button" data-edit-id="${item.id}">Edit No.</button>
+          <button class="status-button accept" data-id="${item.id}" data-status="Accepted">${t("accept")}</button>
+          <button class="status-button" data-id="${item.id}" data-status="Working">${statusText("Working")}</button>
+          <button class="status-button accept" data-id="${item.id}" data-status="Solved">${statusText("Solved")}</button>
+          <button class="status-button reject" data-id="${item.id}" data-status="Rejected">${statusText("Rejected")}</button>
+          <button class="status-button" data-view-bill="${item.id}" ${item.billUrl ? "" : "disabled"}>${t("viewBill")}</button>
+          <button class="status-button" data-view-product="${item.id}" ${item.productImageUrl ? "" : "disabled"}>Product Image</button>
+          <button class="status-button" data-share="${item.id}">${t("share")}</button>
+        </div>
+      </article>
+    `,
+    )
+    .join("");
+}
+
+function renderAlerts() {
+  const delayed = complaints.filter(isDelayed);
+  const container = document.getElementById("alertFlow");
+
+  if (!delayed.length) {
+    container.innerHTML = `
+      <div class="alert-step">
+        <strong>No delayed complaints</strong>
+        <span>AI alert monitor is active. Complaints over 36 hours will appear here.</span>
+      </div>
+    `;
+    return;
+  }
+
+  container.innerHTML = delayed
+    .map(
+      (item) => `
+        <div class="alert-step urgent">
+          <strong>${item.id} - ${item.product}</strong>
+          <span>${elapsedHours(item)}h open. Notify customer, notify dealer, escalate, and mark as delayed.</span>
+        </div>
+      `,
+    )
+    .join("");
+}
+
+function renderAll() {
+  renderDealerTabs();
+  renderCompanyProductSelectors();
+  renderStatusFilterOptions();
+  renderDealerFilters();
+  renderComplaintTypes();
+  renderSmartTriage();
+  renderCustomerTracking();
+  renderServiceHistory();
+  renderDealerCustomerHistory();
+  renderMetrics();
+  renderComplaints();
+  renderAlerts();
+  applyTranslations();
+}
+
+function updateLiveTimers() {
+  let delayedCountChanged = false;
+
+  complaints.forEach((complaint) => {
+    const duration = formatDuration(elapsedMs(complaint));
+    const delayed = isDelayed(complaint);
+    const customerCard = document.querySelector(`.tracking-card[data-complaint-id="${complaint.id}"]`);
+    const dealerCard = document.querySelector(`.complaint-card[data-complaint-id="${complaint.id}"]`);
+    const timer = document.querySelector(`[data-timer-id="${complaint.id}"]`);
+    const listTimer = document.querySelector(`[data-list-timer-id="${complaint.id}"]`);
+    const badge = document.querySelector(`[data-badge-id="${complaint.id}"]`);
+    const note = document.querySelector(`[data-note-id="${complaint.id}"]`);
+
+    if (timer) timer.textContent = duration;
+    if (listTimer) listTimer.textContent = duration;
+
+    if (customerCard && customerCard.classList.contains("delayed") !== delayed) {
+      customerCard.classList.toggle("delayed", delayed);
+      delayedCountChanged = true;
+    }
+    if (dealerCard && dealerCard.classList.contains("delayed") !== delayed) {
+      dealerCard.classList.toggle("delayed", delayed);
+      delayedCountChanged = true;
+    }
+    if (badge) badge.textContent = delayed ? statusText("Delayed") : statusText(complaint.status);
+    if (note) {
+      note.textContent = delayed
+        ? "Delayed alert active: dealer and customer notifications required."
+        : `Estimated time: ${complaint.estimatedHours} hours`;
+    }
+  });
+
+  if (delayedCountChanged) {
+    renderMetrics();
+    renderAlerts();
+  }
+}
+
+function showToast(message) {
+  const toast = document.getElementById("toast");
+  toast.textContent = message;
+  toast.classList.add("visible");
+  window.setTimeout(() => toast.classList.remove("visible"), 2600);
+}
+
+async function apiRequest(url, options = {}) {
+  const response = await fetch(url, {
+    headers: { "Content-Type": "application/json" },
+    ...options,
+  });
+  if (!response.ok) {
+    throw new Error(`API error ${response.status}`);
+  }
+  return response.json();
+}
+
+async function loadComplaintsFromDatabase() {
+  try {
+    complaints = await apiRequest("/api/complaints");
+    const numbers = complaints
+      .map((item) => Number(String(item.id).replace(/\D/g, "")))
+      .filter(Boolean);
+    nextComplaintNumber = Math.max(1045, ...numbers.map((number) => number + 1));
+    renderAll();
+  } catch (error) {
+    showToast("Database is offline. Using local demo data.");
+  }
+}
+
+async function createComplaint(complaint) {
+  try {
+    await apiRequest("/api/complaints", {
+      method: "POST",
+      body: JSON.stringify(complaint),
+    });
+  } catch (error) {
+    showToast("Saved locally only. Database connection failed.");
+  }
+}
+
+async function updateComplaint(id, updates) {
+  try {
+    await apiRequest(`/api/complaints/${encodeURIComponent(id)}`, {
+      method: "PATCH",
+      body: JSON.stringify(updates),
+    });
+  } catch (error) {
+    showToast("Updated locally only. Database connection failed.");
+  }
+}
+
+function fileToDataUrl(file) {
+  return new Promise((resolve) => {
+    if (!file || !file.size) {
+      resolve({ url: null, name: "" });
+      return;
+    }
+    const reader = new FileReader();
+    reader.onload = () => resolve({ url: reader.result, name: file.name });
+    reader.onerror = () => resolve({ url: null, name: "" });
+    reader.readAsDataURL(file);
+  });
+}
+
+function openBillModal(complaint) {
+  if (!complaint) return;
+  const modal = document.getElementById("billModal");
+  const preview = document.getElementById("billPreview");
+  document.getElementById("billModalTitle").textContent = `${complaint.id} - ${complaint.name}`;
+
+  if (!complaint.billUrl) {
+    preview.innerHTML = `<p>${t("notUploaded")}</p>`;
+  } else {
+    preview.innerHTML = `
+      <img src="${complaint.billUrl}" alt="Uploaded bill for ${complaint.id}" />
+      <p>${complaint.billName}</p>
+    `;
+  }
+
+  modal.classList.add("visible");
+  modal.setAttribute("aria-hidden", "false");
+}
+
+function openProductImageModal(complaint) {
+  if (!complaint) return;
+  const modal = document.getElementById("billModal");
+  const preview = document.getElementById("billPreview");
+  document.getElementById("billModalTitle").textContent = `${complaint.id} - ${complaint.product}`;
+
+  if (!complaint.productImageUrl) {
+    preview.innerHTML = `<p>${t("notUploaded")}</p>`;
+  } else {
+    preview.innerHTML = `
+      <img src="${complaint.productImageUrl}" alt="Uploaded product for ${complaint.id}" />
+      <p>${complaint.productImageName}</p>
+    `;
+  }
+
+  modal.classList.add("visible");
+  modal.setAttribute("aria-hidden", "false");
+}
+
+function closeBillModal() {
+  const modal = document.getElementById("billModal");
+  modal.classList.remove("visible");
+  modal.setAttribute("aria-hidden", "true");
+}
+
+function openShareModal(complaint) {
+  const modal = document.getElementById("shareModal");
+  const shareMessage = [
+    `Complaint: ${complaint.id}`,
+    `Customer: ${complaint.name} (${complaint.phone})`,
+    `Company: ${complaint.company}`,
+    `Product: ${complaint.product}`,
+    `Issue: ${complaint.type}`,
+    `ETA: ${complaint.estimatedHours}h`,
+    `Status: ${isDelayed(complaint) ? "Delayed" : complaint.status}`,
+    `Open Time: ${formatDuration(elapsedMs(complaint))}`,
+  ].join("\n");
+
+  document.getElementById("shareModalTitle").textContent = `${complaint.id} - ${complaint.product}`;
+  document.getElementById("shareText").value = shareMessage;
+  modal.classList.add("visible");
+  modal.setAttribute("aria-hidden", "false");
+}
+
+function closeShareModal() {
+  const modal = document.getElementById("shareModal");
+  modal.classList.remove("visible");
+  modal.setAttribute("aria-hidden", "true");
+}
+
+document.querySelectorAll(".nav-item").forEach((button) => {
+  button.addEventListener("click", () => {
+    currentView = button.dataset.view;
+    document.querySelectorAll(".nav-item").forEach((item) => item.classList.remove("active"));
+    document.querySelectorAll(".view").forEach((view) => view.classList.remove("active-view"));
+    button.classList.add("active");
+    document.getElementById(currentView).classList.add("active-view");
+    applyTranslations();
+  });
+});
+
+document.querySelectorAll(".dealer-tab").forEach((button) => {
+  button.addEventListener("click", () => {
+    dealerTab = button.dataset.dealerTab;
+    renderAll();
+  });
+});
+
+document.getElementById("languageToggle").addEventListener("click", () => {
+  language = language === "en" ? "gu" : "en";
+  renderAll();
+  showToast(language === "en" ? "Language changed to English" : "ભાષા ગુજરાતી કરવામાં આવી");
+});
+
+document.getElementById("themeToggle").addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  applyTranslations();
+});
+
+document.getElementById("toastDemo").addEventListener("click", () => {
+  const delayed = complaints.filter(isDelayed);
+  if (!delayed.length) {
+    showToast("AI alert monitor is active. No complaints are delayed right now.");
+    return;
+  }
+  showToast(`${delayed.length} delayed complaint alert sent to customer and dealer.`);
+});
+
+document.getElementById("saveProfile").addEventListener("click", () => {
+  const profile = {
+    name: document.getElementById("customerName").value.trim(),
+    phone: document.getElementById("customerPhone").value.trim(),
+  };
+  localStorage.setItem("serviceflowCustomerProfile", JSON.stringify(profile));
+  showToast("Customer profile saved.");
+});
+
+document.getElementById("loadProfile").addEventListener("click", () => {
+  const profile = JSON.parse(localStorage.getItem("serviceflowCustomerProfile") || "{}");
+  if (profile.name) document.getElementById("customerName").value = profile.name;
+  if (profile.phone) document.getElementById("customerPhone").value = profile.phone;
+  showToast("Customer profile loaded.");
+});
+
+document.getElementById("complaintSearch").addEventListener("input", (event) => {
+  searchTerm = event.target.value;
+  renderComplaints();
+});
+
+document.getElementById("statusFilter").addEventListener("change", (event) => {
+  statusFilter = event.target.value;
+  renderComplaints();
+});
+
+document.getElementById("companyFilter").addEventListener("change", (event) => {
+  companyFilter = event.target.value;
+  productFilter = "All";
+  renderDealerFilters();
+  renderComplaints();
+});
+
+document.getElementById("productFilter").addEventListener("change", (event) => {
+  productFilter = event.target.value;
+  renderComplaints();
+});
+
+document.getElementById("companySelect").addEventListener("change", () => {
+  renderCompanyProductSelectors();
+  renderComplaintTypes();
+  renderSmartTriage();
+});
+
+document.getElementById("productSelect").addEventListener("change", () => {
+  renderComplaintTypes();
+  renderSmartTriage();
+});
+
+document.getElementById("historySearch").addEventListener("input", (event) => {
+  historySearchTerm = event.target.value;
+  renderDealerCustomerHistory();
+});
+
+document.getElementById("complaintForm").addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const formData = new FormData(event.currentTarget);
+  const billFile = formData.get("bill");
+  const productFile = formData.get("photo");
+  const product = formData.get("product");
+  const triage = getSmartTriage(product, selectedComplaintType);
+  const billImage = await fileToDataUrl(billFile);
+  const productImage = await fileToDataUrl(productFile);
+  const complaint = {
+    id: `CMP-${nextComplaintNumber++}`,
+    name: formData.get("name"),
+    phone: formData.get("phone"),
+    company: formData.get("company"),
+    product,
+    type: selectedComplaintType,
+    status: "Pending",
+    submittedAt: Date.now(),
+    estimatedHours: triage.estimatedHours,
+    priority: triage.priority,
+    smartNote: triage.smartNote,
+    billUrl: billImage.url,
+    billName: billImage.name,
+    productImageUrl: productImage.url,
+    productImageName: productImage.name,
+  };
+  complaints.unshift(complaint);
+  await createComplaint(complaint);
+  event.currentTarget.reset();
+  selectedComplaintType = "Product Not Working";
+  renderAll();
+  showToast("Complaint Submitted. This complaint's live timer has started.");
+});
+
+document.addEventListener("click", (event) => {
+  const statusButton = event.target.closest("[data-status]");
+  const editButton = event.target.closest("[data-edit-id]");
+  const shareButton = event.target.closest("[data-share]");
+  const billButton = event.target.closest("[data-view-bill]");
+  const productButton = event.target.closest("[data-view-product]");
+  const closeModalButton = event.target.closest("[data-close-modal]");
+
+  if (statusButton) {
+    const complaint = complaints.find((item) => item.id === statusButton.dataset.id);
+    complaint.status = statusButton.dataset.status;
+    updateComplaint(complaint.id, { status: complaint.status });
+    renderAll();
+    showToast(`${complaint.id} marked as ${complaint.status}.`);
+  }
+
+  if (editButton) {
+    const complaint = complaints.find((item) => item.id === editButton.dataset.editId);
+    const newId = window.prompt("Enter new complaint number", complaint.id);
+    if (newId && newId.trim() && newId.trim() !== complaint.id) {
+      const oldId = complaint.id;
+      complaint.id = newId.trim();
+      updateComplaint(oldId, { id: complaint.id });
+      renderAll();
+      showToast(`Complaint number changed to ${complaint.id}.`);
+    }
+  }
+
+  if (shareButton) {
+    const complaint = complaints.find((item) => item.id === shareButton.dataset.share);
+    openShareModal(complaint);
+  }
+
+  if (billButton) {
+    const complaint = complaints.find((item) => item.id === billButton.dataset.viewBill);
+    openBillModal(complaint);
+  }
+
+  if (productButton) {
+    const complaint = complaints.find((item) => item.id === productButton.dataset.viewProduct);
+    openProductImageModal(complaint);
+  }
+
+  if (closeModalButton) {
+    closeBillModal();
+  }
+
+  if (event.target.closest("[data-close-share]")) {
+    closeShareModal();
+  }
+});
+
+renderAll();
+loadComplaintsFromDatabase();
+window.setTimeout(() => {
+  document.body.classList.remove("loading");
+}, 650);
+
+window.setInterval(() => {
+  updateLiveTimers();
+}, 1000);

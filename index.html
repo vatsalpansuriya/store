@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10141c" />
+    <title>ServiceFlow Complaint App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="loading">
+    <div class="loading-screen" aria-hidden="true">
+      <div class="loading-phone">
+        <div class="skeleton skeleton-title"></div>
+        <div class="skeleton skeleton-card"></div>
+        <div class="skeleton skeleton-card short"></div>
+        <div class="skeleton-row">
+          <span class="skeleton skeleton-pill"></span>
+          <span class="skeleton skeleton-pill"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <div class="brand">
+          <span class="brand-mark">SF</span>
+          <div>
+            <strong>ServiceFlow</strong>
+            <small data-i18n="brandTag">Repair complaint suite</small>
+          </div>
+        </div>
+
+        <nav class="nav-list">
+          <button class="nav-item active" data-view="customer" type="button">
+            <span>C</span><span data-i18n="customer">Customer</span>
+          </button>
+          <button class="nav-item" data-view="dealer" type="button">
+            <span>D</span><span data-i18n="dealer">Dealer</span>
+          </button>
+        </nav>
+
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow" data-i18n="workspace">Complaint operations workspace</p>
+            <h1 id="viewTitle" data-i18n="customerPortal">Customer Portal</h1>
+          </div>
+          <div class="topbar-actions">
+            <button id="languageToggle" class="utility-button" type="button">GU</button>
+            <button id="themeToggle" class="utility-button" type="button" data-i18n="darkMode">Dark mode</button>
+            <button id="toastDemo" class="primary-button" type="button" data-i18n="sendAlert">Send alert</button>
+          </div>
+        </header>
+
+        <section id="customer" class="view active-view">
+          <div class="grid customer-only">
+            <form id="complaintForm" class="panel form-panel">
+              <div class="section-heading">
+                <p class="eyebrow" data-i18n="newComplaint">New complaint</p>
+                <h2 data-i18n="submitComplaint">Submit Complaint</h2>
+              </div>
+
+              <div class="form-grid">
+                <label>
+                  <span data-i18n="name">Name</span>
+                  <input id="customerName" name="name" required placeholder="Dhaval Patel" />
+                </label>
+                <label>
+                  <span data-i18n="phone">Phone Number</span>
+                  <input id="customerPhone" name="phone" required placeholder="+91 98765 43210" />
+                </label>
+                <label>
+                  <span data-i18n="company">Company Name</span>
+                  <select id="companySelect" name="company" required></select>
+                </label>
+                <label>
+                  <span data-i18n="product">Product Name</span>
+                  <select id="productSelect" name="product" required></select>
+                </label>
+              </div>
+              <div class="profile-actions">
+                <button class="status-button" id="saveProfile" type="button">Save Profile</button>
+                <button class="status-button" id="loadProfile" type="button">Use Saved Profile</button>
+              </div>
+
+              <fieldset>
+                <legend data-i18n="complaintType">Complaint Form</legend>
+                <div class="chip-grid" id="complaintTypes"></div>
+              </fieldset>
+
+              <section class="smart-triage" aria-live="polite">
+                <div>
+                  <p class="eyebrow" data-i18n="smartTriage">Smart Triage</p>
+                  <h3 id="triagePriority">Priority</h3>
+                </div>
+                <div class="triage-grid">
+                  <article>
+                    <span data-i18n="estimatedTime">Estimated Time</span>
+                    <strong id="triageEta">--</strong>
+                  </article>
+                  <article>
+                    <span data-i18n="dealerNote">Dealer Note</span>
+                    <strong id="triageNote">--</strong>
+                  </article>
+                </div>
+              </section>
+
+              <div class="form-grid">
+                <label class="file-input">
+                  <span data-i18n="billImage">Upload Bill Image</span>
+                  <input name="bill" type="file" accept="image/*" />
+                </label>
+                <label class="file-input">
+                  <span data-i18n="productImage">Upload Product Image</span>
+                  <input name="photo" type="file" accept="image/*" />
+                </label>
+              </div>
+
+              <label>
+                <span data-i18n="description">Complaint Description</span>
+                <textarea name="description" rows="5" placeholder="Describe the issue, purchase date, and current condition."></textarea>
+              </label>
+
+              <button class="primary-button wide" type="submit" data-i18n="submit">Submit</button>
+            </form>
+
+            <div id="customerTracking" hidden></div>
+            <div id="serviceHistory" hidden></div>
+          </div>
+        </section>
+
+        <section id="dealer" class="view">
+          <div class="dealer-tabs" role="tablist" aria-label="Dealer dashboard tabs">
+            <button class="dealer-tab active" type="button" data-dealer-tab="total">Total com.</button>
+            <button class="dealer-tab" type="button" data-dealer-tab="active">Active coml.</button>
+            <button class="dealer-tab" type="button" data-dealer-tab="history">Customer history</button>
+          </div>
+          <div class="metric-grid" id="dealerMetrics"></div>
+          <div class="grid two-columns">
+            <section class="panel dealer-tab-panel" data-tab-panel="total active">
+              <div class="section-heading">
+                <p class="eyebrow" data-i18n="management">Complaint Management</p>
+                <h2 data-i18n="activeComplaints">All Complaints</h2>
+              </div>
+              <div class="dealer-tools" aria-label="Complaint search and filters">
+                <label class="search-field">
+                  <span data-i18n="searchComplaints">Search Complaints</span>
+                  <input id="complaintSearch" type="search" placeholder="Search name, phone, product, company" />
+                </label>
+                <label class="filter-field">
+                  <span data-i18n="filterComplaints">Filter Complaints</span>
+                  <select id="statusFilter">
+                    <option value="All">All Status</option>
+                    <option value="Pending">Pending</option>
+                    <option value="Accepted">Accepted</option>
+                    <option value="Working">Working</option>
+                    <option value="Solved">Solved</option>
+                    <option value="Rejected">Rejected</option>
+                    <option value="Delayed">Delayed</option>
+                  </select>
+                </label>
+                <label class="filter-field">
+                  <span data-i18n="companyFilter">Company</span>
+                  <select id="companyFilter"></select>
+                </label>
+                <label class="filter-field">
+                  <span data-i18n="productFilter">Product</span>
+                  <select id="productFilter"></select>
+                </label>
+              </div>
+              <div id="complaintList" class="complaint-list"></div>
+            </section>
+            <section class="panel dealer-tab-panel" data-tab-panel="total active">
+              <div class="section-heading">
+                <p class="eyebrow" data-i18n="alertSystem">36 Hour Alert System</p>
+                <h2 data-i18n="delayReminder">AI & Alerts</h2>
+              </div>
+              <div class="alert-flow" id="alertFlow"></div>
+            </section>
+            <section class="panel dealer-tab-panel" data-tab-panel="history">
+              <div class="section-heading compact-heading">
+                <p class="eyebrow" data-i18n="customerHistory">Customer History</p>
+                <h2 data-i18n="serviceHistory">Service History</h2>
+              </div>
+              <label class="history-search">
+                <span data-i18n="searchCustomerHistory">Search Customer</span>
+                <input id="historySearch" type="search" placeholder="Search customer name or number" />
+              </label>
+              <div id="dealerCustomerHistory" class="history-list"></div>
+            </section>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <div id="billModal" class="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="billModalTitle">
+        <header>
+          <div>
+            <p class="eyebrow" data-i18n="customerBill">Customer Bill</p>
+            <h2 id="billModalTitle" data-i18n="uploadedBill">Uploaded Bill</h2>
+          </div>
+          <button class="icon-button" type="button" data-close-modal aria-label="Close bill preview">X</button>
+        </header>
+        <div id="billPreview" class="bill-preview"></div>
+      </section>
+    </div>
+    <div id="shareModal" class="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-share></div>
+      <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="shareModalTitle">
+        <header>
+          <div>
+            <p class="eyebrow" data-i18n="shareComplaint">Share Complaint</p>
+            <h2 id="shareModalTitle" data-i18n="complaintLink">Complaint Link</h2>
+          </div>
+          <button class="icon-button" type="button" data-close-share aria-label="Close share preview">X</button>
+        </header>
+        <div class="share-preview">
+          <textarea id="shareText" readonly rows="6"></textarea>
+          <p>Use this text for WhatsApp, SMS, or internal sharing.</p>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
